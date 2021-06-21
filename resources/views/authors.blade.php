@@ -24,13 +24,14 @@
         </li>
       </ul>
     </nav>
-    <h1>Autori: </h1>
 
-    <ul>
+    <h1 class="display-6 mb-4">Autori: </h1>
+
+    <ul class="list-group">
 
       @foreach ($artists as $artist)
         
-        <li> {{$artist}} </li>
+        <li class="list-group-item"> {{$artist}} </li>
        
       @endforeach
       

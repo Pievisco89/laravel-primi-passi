@@ -25,13 +25,13 @@
       </ul>
     </nav>
     
-    <h1>Album:</h1>
+    <h1 class="display-6 mb-4">Album:</h1>
     
-    <ul>
+    <ul class="list-group">
 
       @foreach ($discs as $disc)
         
-        <li> {{$disc}} </li>
+        <li class="list-group-item"> {{$disc}} </li>
        
       @endforeach
       

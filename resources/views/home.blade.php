@@ -25,7 +25,7 @@
       </ul>
     </nav>
 
-    <h1>Hello {{ $name }} {{ $lastname }} </h1>
+    <h1 class="display-4">Hello {{ $name }} {{ $lastname }} </h1>
 
     @if($name === 'Pietro' && $lastname === 'Visconti')
       <span> Sei in lista, puoi accedere! </span>
@@ -35,18 +35,18 @@
 
     <hr>
 
-    <h3>Canzoni preferite:</h3>
+    <h3 class="display-6 mb-4">Canzoni preferite:</h3>
 
-    <ul>
+    <ul class="list-group">
 
       @foreach ($songs as $song)
 
         @if($loop->first)
-          <li>Prima canzone: {{$song}} </li>
+          <li class="list-group-item">Prima canzone: {{$song}} </li>
         @elseif($loop->last)
-          <li>Ultima canzone: {{$song}} </li>
+          <li class="list-group-item">Ultima canzone: {{$song}} </li>
         @else
-          <li> {{$song}} </li>
+          <li class="list-group-item"> {{$song}} </li>
         @endif
 
       @endforeach
